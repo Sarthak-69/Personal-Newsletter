@@ -1,0 +1,41 @@
+:root {
+    --primary: hsl(24, 30%, 74%, 0.65);
+    --secondary: hsla(34, 30%, 82%, 0.65);
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+body {
+    font-family: 'Montserrat';
+    background: linear-gradient(90deg, var(--secondary), var(--primary)),
+                url(/lsd.jpg) no-repeat center center / cover;
+}
+  
+/* Header Styles */
+header {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 50px 0px;
+    margin-right: 50px;
+    margin-bottom: 0;
+}
+
+header h1 {
+font-family: 'Yellowtail';
+color: #85586F;
+font-size: 10rem;
+}
+
+/* Image Styles */
+.image {
+    padding-left: 25rem ;
+    margin-top: 0;
+}
+  

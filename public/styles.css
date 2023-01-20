@@ -1,0 +1,156 @@
+:root {
+    --primary: hsl(24, 30%, 74%, 0.65);
+    --secondary: hsla(34, 30%, 82%, 0.65);
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Montserrat';
+    background: linear-gradient(90deg, var(--secondary), var(--primary)),
+                url(/lsd.jpg) no-repeat center center / cover;
+}
+
+  
+/* Header Styles */
+header {
+        position: relative;
+        display: block;
+        text-align: center;
+        padding: 50px 0px;
+        margin-right: 50px;
+        margin-bottom: 0;
+}
+  
+header h1 {
+    font-family: 'Yellowtail';
+    color: #85586F;
+    font-size: 10rem;
+}
+  
+/* Main Container Styles */
+.main-container {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+
+/* Form Container Styles */
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-right: 250px;
+    padding-left: 250px;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.larger-label {
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #85586F;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.smaller-input {
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #DFD3C3;
+    font-size: .8em;
+}
+  
+::placeholder {
+    color: #85586F;
+    font-weight:bold;
+}
+
+input, select, textarea {
+    color: #85586F;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+    
+  
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 25px 0;
+}
+  
+footer p {
+    color: #85586F;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+    /*  Button  */
+    .button {
+        align-items: center;
+        background-color: #fee6e3;
+        border: 2px solid #85586F;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #85586F;
+        cursor: pointer;
+        display: flex;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        height: 48px;
+        justify-content: center;
+        line-height: 24px;
+        max-width: 100%;
+        padding: 0 25px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    .button:after {
+        background-color: #85586F;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        transform: translate(8px, 8px);
+        transition: transform .2s ease-out;
+        z-index: -1;
+    }
+
+    .button:hover:after {
+        transform: translate(0, 0);
+    }
+
+    .button:active {
+        background-color: #ffdeda;
+        outline: 0;
+    }
+
+    .button:hover {
+        outline: 0;
+    }
+
+    @media (min-width: 768px) {
+        .button {
+            padding: 0 40px;
+        }
+    }
+  
